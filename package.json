@@ -1,0 +1,9 @@
+{
+  "name": "recomp-tracker",
+  "version": "1.0.0",
+  "description": "Workout and calorie tracker with accounts, friends, and a leaderboard",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=22.13" },
+  "license": "MIT"
+}

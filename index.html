@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Recomp</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/style.css"></head><body><main>
+<section id="auth" hidden><h1>Recomp</h1><p class="q">Track your meals and workouts, earn points, and compete with friends.</p>
+<div class="card"><label class="fl" for="aun">Username</label><input type="text" id="aun" autocomplete="username" autocapitalize="none" spellcheck="false" maxlength="20"><label class="fl" for="apw">Password</label><input type="password" id="apw" autocomplete="current-password"></div>
+<p id="aer" role="alert"></p><button class="ab" id="asb">Log in</button><div class="ob2"><button class="lnk" id="amd">Create an account instead</button></div></section>
+<section id="wel"></section>
+<section id="ob" hidden><h1>Set up your plan</h1><p class="q">Tell the app your goals, what you eat, and how you train. You can change this any time.</p>
+<div class="card"><label class="fl" for="on">Your name</label><input type="text" id="on" maxlength="20"><label class="fl" for="ok">Daily calories</label><input type="number" id="ok" inputmode="numeric"><label class="fl" for="op">Daily protein in grams</label><input type="number" id="op" inputmode="numeric"></div>
+<div class="card"><label class="fl" for="om">Your meals, one per line: name, calories, protein</label><textarea id="om" rows="5" placeholder="Breakfast, 500, 30"></textarea></div>
+<div class="card"><label class="fl" for="ow">Your workouts, one per line: name: exercise sets x reps, next exercise</label><textarea id="ow" rows="6" placeholder="Push: Bench press 3x8, Shoulder press 3x10"></textarea></div>
+<p id="oe" role="alert"></p><button class="ab" id="os">Save and continue</button>
+<div class="ob2"><button class="lnk" id="ost">Fill in a starter plan</button><button class="lnk" id="oc">Cancel</button></div></section>
+<div id="app" hidden>
+<div id="hd"></div>
+<div id="today">
+<div id="wkb"></div>
+<div class="card" id="cal"></div>
+<div class="card"><h2>Meals</h2><div id="ml"></div>
+<details class="addf" id="af"><summary>Add other food</summary><div class="add"><input type="text" id="an" placeholder="Food" aria-label="Food name"><input type="number" id="ak" placeholder="kcal" inputmode="numeric" aria-label="Calories"><input type="number" id="ap" placeholder="protein" inputmode="numeric" aria-label="Protein in grams"><button class="ab" id="ad">Add food</button></div></details></div>
+<div class="card wo"><h2>Workouts</h2><div id="wo"></div></div>
+</div>
+<div id="fr" hidden>
+<div class="card"><h2>Leaderboard</h2><div class="seg2"><button data-sc="friends">Friends</button><button data-sc="all">Everyone</button></div><div id="lbl"></div></div>
+<div class="card"><h2>Friends</h2><div class="add2"><input type="text" id="fu" placeholder="Friend's username" autocapitalize="none" spellcheck="false" aria-label="Friend's username"><button class="ab" id="fa">Add</button></div><p class="lbl" id="fm"></p><div id="fls"></div></div>
+<div class="card"><h2>How points work</h2><p class="lbl">10 points for each day you land within your calorie goal and hit your protein goal. 20 points for every workout you finish. Weekly points reset on Monday.</p></div>
+</div>
+<div id="prog" hidden>
+<div class="card" id="pst"></div>
+<div class="card"><h2>Check-in</h2><div class="ci"><input type="date" id="cd" aria-label="Date"><input type="number" id="cw" step="0.1" inputmode="decimal" placeholder="Weight kg" aria-label="Weight in kg"><input type="number" id="cc" step="0.1" inputmode="decimal" placeholder="Waist cm" aria-label="Waist in cm"></div><button class="ab" id="cs">Save check-in</button></div>
+<div class="card"><h2>Photos</h2><p class="lbl" id="pm"></p><div id="pph"></div><button class="ab" id="pa">Add progress photo</button></div>
+<div class="card" id="pco"></div>
+</div>
+<div class="foot" id="ft"></div>
+</div>
+<input type="file" id="pf" accept="image/*" hidden>
+<input type="file" id="pp" accept="image/*" hidden>
+</main>
+<script src="/app.js"></script></body></html>
